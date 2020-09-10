@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="As a premier electronic payment solution, technology and service provider, AsiaPay brings comprehensive, convenient and secure ePayment processing solutions and services to banks and businesses in the worldwide market since 2000, covering international credit card, debit card, netbanking, digital wallets, SmartPOS and other electronic payment means." />
+<meta name="keywords" content="Hong Kong, Payment Gateway, Payment processing, Credit Card payments, Credit Card processing, Netbanking, digital wallets, Smart POS, ApplePay, Samsung Pay, Secure online payments, Hong Kong payment solution, online payments, online transactions, merchant accounts." />
+<link rel="icon" href="favicon.ico" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/asiapay_map.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+	$(function(){
+		$("[data-load]").each(function(){
+			$(this).load($(this).data("load"), function(){
+			});
+		});
+	})
+	
+	
+	$(document).ready(function() {
+    var text_max =250;
+    $('#textarea_feedback').html(text_max + ' Characters remaining');
+
+    $('#textarea').keyup(function() {
+        var text_length = $('#textarea').val().length;
+        var text_remaining = text_max - text_length;
+
+        $('#textarea_feedback').html(text_remaining + ' Characters remaining');
+    });
+});
+</script>
+
+
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"G7FXl1aU8KL3fn", domain:"asiapay.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=G7FXl1aU8KL3fn" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript --> 
+
+<title>AsiaPay Global</title>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="asiapayMap">
+
+	
+<div id="enquiryMap" class="container-fluid">	
+		<div id="map"></div>
+</div><!--Contact container fluid-->		
+
+		<!-- Add Google Maps -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9qoHHdvYWrEeNGOBSRJ6VMYXt0GzUjRw"></script>
+
+		<script type="text/javascript">
+		// here example of the location array to be stored.
+		var locations = [
+			['<a href=https://www.asiapay.com.hk/contact.html><span>AsiaPay Hong Kong - Headquarter</span></a><br><div id=add>Unit 1701-02, 17/F, K. Wah Centre, 191 Java Road, North Point, Hong Kong</div><div id=mTel>Tel: +852 2538 8278</div><div id=mFax>Fax: +852 2545 3898</div><div id=mEmail><a href=mailto:sales@asiapay.com>sales@asiapay.com</a></div>', "K. Wah Centre, 191 Java Road,North Point, Hong Kong"],
+			['<a href=https://www.asiapay.com/contact.html><span>AsiaPay Australia - Melbourne</span></a><br><div id=add>Unit 603, 221 Queen Street, Melbourne, VIC 3000, Australia</div><div id=mTel>Tel: +61 3 8597 8402</div><div id=mEmail><a href=mailto:sales@asiapay.com.au>sales@asiapay.com.au</a></div>', "Unit 603, 221 Queen Street, Melbourne, VIC 3000, Australia"],
+			['<a href=https://www.asiapay.com/contact.html><span>AsiaPay Australia - Sydney</span></a><br><div id=add>Level 35, Tower One, International Towers, 100 Barangaroo Avenue, Sydney, NSW 2000, Australia</div><div id=mTel>Tel: +61 2 8046 6993</div><div id=mEmail><a href=mailto:sales@asiapay.com.au>sales@asiapay.com.au</a></div>', "Level 35, Tower One, International Towers, 100 Barangaroo Avenue, Sydney, NSW 2000, Australia"],
+			['<a href=https://www.asiapay.com.cn/contact.html><span>AsiaPay China - Shanghai Office</span></a><br><div id=add>Room 1907, Guangqi City, 425 Yishan Road, Xuhui District, Shanghai, China</div><div id=mTel>Tel: +86 21 6468 5277</div><div id=mFax>Fax: +86 21 6468 5278</div><div id=mEmail> <a href=mailto:sales@asiapay.com.cn>sales@asiapay.com.cn</a></div>', "Guangqi City, 425 Yishan Road, Xuhui District, Shanghai, China"],
+			['<a href=https://www.asiapay.com.cn/contact.html><span>AsiaPay China - Guangzhou Office</span></a><br><div id=add>Room 4101, R&F Profit Plaza, 76 Huang Pu Da Dao West, Tianhe District, Guangzhou, China</div><div id=mTel>Tel: +86 20 3847 9620</div><div id=mFax>Fax: +86 20 3847 9597</div><div id=mEmail> <a href=mailto:sales@asiapay.com.cn>sales@asiapay.com.cn</a>', "76 Huang Pu Da Dao West, Tianhe District, Guangzhou, China"],
+			['<a href=https://www.asiapay.com.cn/contact.html><span>AsiaPay China - Shenzhen Office</span></a><br><div id=add>Room 227, 2F, Oriental Plaza, 1072 Jianshe Road Shenzhen, China</div><div id=mTel>Tel: +86 755 8220 5388</div><div id=mFax>Fax: +86 755 8220 2442</div><div id=mEmail> <a href=mailto:sales@asiapay.com.cn>sales@asiapay.com.cn</a></div>', "Renminnan Road, Shenzhen, China"],
+			['<a href=http://www.paydollar.in/en/contactus.html><span>AsiaPay India</span></a><br><div id=add>B-906, Kanakia Wallstreet, Chakala, Andheri Kurla Road, Andheri(E), Mumbai - 400093, India</div><div id=mTel>Tel: +91 40232381</div><div id=mEmail><a href=mailto:sales@paydollar.in>sales@paydollar.in</a>', "Kanakia Wallstreet, Chakala, Andheri Kurla Road, Andheri East, Mumbai - 400059, India"],
+			['<a href=https://www.asiapay.co.id/en/contact.html><span>AsiaPay Indonesia</span></a><br><div id=add>Menara Prima, 16th Floor, Unit A, Jl. Ide Anak Agung Blok 6.2, Kawasan Mega Kuningan, Jakarta 12950, Indonesia</div><div id=mTel>Tel: +6221 2960 8083</div><div id=mFax>Fax: +6221 2960 8084</div><div id=mEmail><a href=mailto:sales@asiapay.co.id>sales@asiapay.co.id</a></div>', "Kawasan Mega Kuningan, Jakarta 12950, Indonesia"],
+			['<a href=https://www.asiapay.com.my/contact.html><span>AsiaPay Malaysia</span></a><br><div id=add>Business Suite 19A-17-3 & 3A, Level 17, UOA Centre, No. 21, Jalan Pinang, 50450 Kuala Lumpur, Malaysia</div><div id=mTel>Tel: +603 2161 8188</div><div id=mFax>Fax: +603 2181 4168</div><div id=mEmail> <a href=mailto:sales@asiapay.com.my>sales@asiapay.com.my</a></div>', "No. 21, Jalan Pinang, 50450 Kuala Lumpur, Malaysia"],
+			['<a href=https://www.asiapay.com.ph/contact.html><span>AsiaPay Philippines</span></a><br><div id=add>Unit 32-C, 32/F, Rufino Pacific Tower, 6784 Ayala Avenue, Makati City, Metro Manila, Philippines 1226</div><div id=mTel>Tel: +63 2 887 0088</div><div id=mFax>Fax: +63 2 887 0182</div><div id=mEmail><a href=mailto:sales@asiapay.com.ph>sales@asiapay.com.ph</a></div>', "Rufino Pacific Tower, 6784 Ayala Avenue, Makati City, Metro Manila, Philippines"],
+			['<a href=https://www.asiapay.com.sg/contact.html><span>AsiaPay Singapore</span></a><br><div id=add>20 Collyer Quay #23-01 Singapore 049319</div><div id=mTel>Tel: +65 6653 1929</div><div id=mFax>Fax: +65 6832 8010</div><div id=mEmail> <a href=mailto:sales@asiapay.com.sg>sales@asiapay.com.sg</a></div>', "20 Collyer Quay #23-01 Singapore 049319 "],
+			['<a href=https://www.asiapay.com.tw/contact.html><span>AsiaPay Taiwan</span></a><br><div id=add>6F.-5, No.188, Sec. 5, Nanjing E. Rd., Songshan Dist., Taipei City 105, Taiwan</div><div id=mTel>Tel: +886 02 7707 4757</div><div id=mFax>Fax: +886 02 7707 4799<div id=mEmail> <a href=mailto:sales@asiapay.com.tw>sales@asiapay.com.tw</a></div>', "6F.-5, No.188, Sec. 5, Nanjing E. Rd., Songshan Dist., Taipei City 105, Taiwan"],
+			['<a href=http://www.asiapay.co.th/contact.html><span>AsiaPay Thailand</span></a><br><div id=add>R.S.Tower, Unit 121/49, Level 11, Ratchadapisek Road, Dindeang, Dindeang, Bangkok 10400, Thailand</div><div id=mTel>Tel: +66 2 642 3272</div><div id=mFax>Fax: +66 2 642 3279 </div><div id=mEmail> <a href=mailto:sales@asiapay.co.th>sales@asiapay.co.th</a></div>', "Ratchadapisek Road, Dindeang, Dindeang,Bangkok 10400, Thailand"],
+			['<a href=https://www.asiapay.com.vn/en/contact.html><span>AsiaPay Vietnam</span></a><br><div id=add>Unit 029, 4/F, Centec Tower, 72 - 74 Nguyen Thi Minh Khai Street, Ward 6, District 3, Ho Chi Minh City, Vietnam</div><div id=mTel>Tel: +84 28 6299 9190</div><div id=mFax>Fax: +84 28 6299 8299</div><div id=mEmail> <a href=mailto:sales@asiapay.com.vn>sales@asiapay.com.vn</a></div>', "Centec Tower, 72 - 74 Nguyen Thi Minh Khai Street, Ward 6, District 3, Ho Chi Minh City, Vietnam"],
+			['<a href=https://www.asiapay.com/contact.html><span>AsiaPay United Kingdom</span></a><br><div id=add>Dalton House, 60 Windsor Avenue, London SW19 2RR, United Kingdom</div><div id=mTel>Tel: +44 141 353 9567</div><div id=mEmail><a href=mailto:sales@asiapay.co.uk>sales@asiapay.co.uk</a></div>', "Dalton House, 60 Windsor Avenue,London SW19 2RR, United Kingdom"],
+			
+		];
+
+		var officePhotos = [
+			"<div class='mapPhoto'><a href=https://www.asiapay.com.hk/contact.html><IMG SRC='https://www.asiapay.com/images/contact/office_hk_s.gif'></a></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_au_melbourne_s.gif'></a></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_au_sydney_s.gif'></a></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com.cn/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_cn_sh_s.gif'></a></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com.cn/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_cn_gz_s.gif'></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com.cn/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_cn_sz_s.gif'></div>",
+			"<div class='mapPhoto'><a href=http://www.paydollar.in/en/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_in_s.gif'></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.co.id/en/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_id_s.gif'></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com.my/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_my_s.gif'></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com.ph/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_ph_s.gif'></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com.sg/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_sg_s.gif'></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com.tw/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_tw_s.gif'></div>",
+			"<div class='mapPhoto'><a href=http://www.asiapay.co.th/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_th_s.gif'></div>",
+			"<div class='mapPhoto'><a href=https://www.asiapay.com.vn/en/contact.html><IMG BORDER='0' ALIGN='Left' SRC='https://www.asiapay.com/images/contact/office_vn_s.gif'></div>",
+			"",
+			
+		];
+
+		var delay = 3;
+		var markers = new Array();
+		//var myIcon = new google.maps.MarkerImage("../images/orange-blank.png", null, null, null, new google.maps.Size(35,35));
+		var myIcon = new google.maps.MarkerImage("https://www.asiapay.com/images/orange-blank.png", null, null, null, new google.maps.Size(28,28));
+		// marker url, changeable.
+		var infowindow = new google.maps.InfoWindow();
+		var latlng = new google.maps.LatLng(22.3593252,114.1408686);
+		
+		
+		var mapOptions = {
+			zoom:3,
+			center: latlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var geocoder = new google.maps.Geocoder();
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);  var bounds = new google.maps.LatLngBounds();
+
+
+		function geocodeAddress(name,address,officePhotosStr,next) {
+			geocoder.geocode({address:address}, function (results,status)
+			{
+				if (status == google.maps.GeocoderStatus.OK) {
+					var p = results[0].geometry.location;
+					var lat=p.lat();
+					var lng=p.lng();
+					createMarker(name,myIcon,lat,lng,officePhotosStr);
+					}
+				else {
+					if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
+						nextAddress--;
+						delay++;
+						} else {
+						}
+					}
+					next();
+				}
+			);
+		}
+
+		function createMarker(add,myicon,lat,lng,photos) {
+		var contentString = "<div class='mapText'><font color=#000>"+add+"</font></div>";
+		var contentPhotos = photos;
+		var marker = new google.maps.Marker({
+		position: new google.maps.LatLng(lat,lng),
+		map: map,
+		icon: myicon
+		});
+		markers.push(marker);
+		google.maps.event.addListener(marker, 'click', function() {
+		infowindow.setContent(contentString+contentPhotos);
+		infowindow.open(map,marker);
+		});
+
+		bounds.extend(marker.position);
+
+		}
+
+		var nextAddress = 0;
+		function theNext() {
+		if (nextAddress < locations.length) {
+		setTimeout('geocodeAddress("'+locations[nextAddress][0]+'","'+locations[nextAddress][1]+'","'+officePhotos[nextAddress]+'",theNext)', delay);
+		nextAddress++;
+
+		} else {
+		map.fitBounds(bounds);
+		var markerCluster = new MarkerClusterer(map, markers);
+		$('#loading').hide();
+		}
+
+		}
+
+		theNext();
+</script>
+	
+
+
+
+
+<!--End Footer-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5050337-3");
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
+
